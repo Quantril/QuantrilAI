@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoM Generator - Quantril AI Suite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <a href="../../index.html" class="back-btn" title="Back to Dashboard">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">MoM Generator</span>
+                        <span class="logo-subtitle">Quantril AI Suite</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-reset" id="resetBtn" title="Start Fresh">
+                <i class="fas fa-redo"></i>
+                <span>Reset</span>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cloud-upload-alt"></i> Upload Files</h2>
+                    <p>Upload your meeting documents to generate Minutes of Meeting</p>
+                </div>
+
+                <div class="upload-grid">
+                    <!-- Input Files Upload -->
+                    <div class="upload-card primary">
+                        <div class="upload-zone" id="inputDropZone">
+                            <input type="file" id="inputFiles" multiple accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.gif,.bmp,.webp" hidden>
+                            <div class="upload-content">
+                                <div class="upload-icon">
+                                    <i class="fas fa-file-upload"></i>
+                                </div>
+                                <h3>Input Documents</h3>
+                                <p>Drag & drop or click to upload</p>
+                                <span class="file-types">PDF, Word, Images</span>
+                            </div>
+                            <div class="upload-overlay">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Drop files here</span>
+                            </div>
+                        </div>
+                        <div class="file-list" id="inputFileList"></div>
+                    </div>
+
+                    <!-- Template Upload -->
+                    <div class="upload-card secondary">
+                        <div class="upload-zone" id="templateDropZone">
+                            <input type="file" id="templateFile" accept=".doc,.docx" hidden>
+                            <div class="upload-content">
+                                <div class="upload-icon">
+                                    <i class="fas fa-file-word"></i>
+                                </div>
+                                <h3>Template (Optional)</h3>
+                                <p>Drag & drop or click to upload</p>
+                                <span class="file-types">Word Document Only</span>
+                            </div>
+                            <div class="upload-overlay">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Drop template here</span>
+                            </div>
+                        </div>
+                        <div class="file-list" id="templateFileList"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Generate Button -->
+            <section class="action-section">
+                <button class="btn-generate" id="generateBtn" disabled>
+                    <span class="btn-text">
+                        <i class="fas fa-magic"></i>
+                        Generate MoM
+                    </span>
+                    <span class="btn-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        Generating...
+                    </span>
+                </button>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress-section" id="progressSection">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-status" id="progressStatus">Processing your documents...</div>
+                </div>
+            </section>
+
+            <!-- Result Section -->
+            <section class="result-section" id="resultSection">
+                <div class="result-card">
+                    <div class="result-icon success">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>MoM Generated Successfully!</h2>
+                    <p>Your Minutes of Meeting document is ready for download</p>
+                    <div class="result-actions">
+                        <button class="btn-download" id="downloadBtn">
+                            <i class="fas fa-download"></i>
+                            Download MoM
+                        </button>
+                        <button class="btn-new" id="newDocBtn">
+                            <i class="fas fa-plus"></i>
+                            Create New
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section class="error-section" id="errorSection">
+                <div class="error-card">
+                    <div class="result-icon error">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h2>Generation Failed</h2>
+                    <p id="errorMessage">An error occurred while generating the MoM.</p>
+                    <button class="btn-retry" id="retryBtn">
+                        <i class="fas fa-redo"></i>
+                        Try Again
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Quantril Technologies. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="toast-icon fas fa-info-circle"></i>
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

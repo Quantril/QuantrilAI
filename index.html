@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantril AI Suite - Enterprise AI Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" style="background-color: #ffffff !important;">
+        <div class="nav-container" style="background-color: #ffffff;">
+            <a href="/" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <span class="logo-text" style="color: #1e293b;">Quantril<span class="logo-highlight">AI</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#solutions" style="color: #475569;">Solutions</a>
+                <a href="#features" style="color: #475569;">Features</a>
+                <a href="#about" style="color: #475569;">About</a>
+                <a href="https://www.quantril.com/" target="_blank" class="btn-nav">Visit Quantril</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#solutions">Solutions</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="https://www.quantril.com/" target="_blank">Visit Quantril</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-rocket"></i>
+                <span>Enterprise AI Solutions</span>
+            </div>
+            <h1 class="hero-title">
+                Transform Your Business with
+                <span class="gradient-text">AI-Powered</span> Solutions
+            </h1>
+            <p class="hero-subtitle">
+                Unlock the power of artificial intelligence with our suite of enterprise-grade tools. 
+                Automate workflows, generate insights, and accelerate your digital transformation.
+            </p>
+            <div class="hero-cta">
+                <a href="#solutions" class="btn-primary">
+                    <i class="fas fa-th-large"></i>
+                    Explore Solutions
+                </a>
+                <a href="https://www.quantril.com/" target="_blank" class="btn-secondary">
+                    <i class="fas fa-external-link-alt"></i>
+                    Learn More
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">AI Models</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Enterprises</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Our Solutions</span>
+                <h2 class="section-title">AI-Powered Tools for Every Need</h2>
+                <p class="section-subtitle">
+                    Choose from our growing collection of AI solutions designed to streamline your workflows
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <!-- MoM Generator - Active -->
+                <div class="solution-card active" onclick="navigateToModule('mom-generator')">
+                    <div class="card-status">
+                        <span class="status-badge live">Live</span>
+                    </div>
+                    <div class="card-icon mom">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="card-title">MoM Generator</h3>
+                    <p class="card-description">
+                        Automatically generate professional Minutes of Meeting documents from audio, images, or existing documents.
+                    </p>
+                    <div class="card-features">
+                        <span><i class="fas fa-check"></i> Multi-format Input</span>
+                        <span><i class="fas fa-check"></i> Custom Templates</span>
+                        <span><i class="fas fa-check"></i> Instant Download</span>
+                    </div>
+                    <div class="card-action">
+                        <span>Launch Tool</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Document Analyzer - Coming Soon -->
+                <div class="solution-card coming-soon">
+                    <div class="card-status">
+                        <span class="status-badge soon">Coming Soon</span>
+                    </div>
+                    <div class="card-icon analyzer">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3 class="card-title">Document Analyzer</h3>
+                    <p class="card-description">
+                        Extract key insights, summaries, and actionable items from any document using advanced NLP.
+                    </p>
+                    <div class="card-features">
+                        <span><i class="fas fa-check"></i> Smart Extraction</span>
+                        <span><i class="fas fa-check"></i> Summary Generation</span>
+                        <span><i class="fas fa-check"></i> Entity Recognition</span>
+                    </div>
+                    <div class="card-action disabled">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+
+                <!-- Invoice Processor - Coming Soon -->
+                <div class="solution-card coming-soon">
+                    <div class="card-status">
+                        <span class="status-badge soon">Coming Soon</span>
+                    </div>
+                    <div class="card-icon invoice">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="card-title">Invoice Processor</h3>
+                    <p class="card-description">
+                        Automate invoice data extraction and processing with high accuracy AI models.
+                    </p>
+                    <div class="card-features">
+                        <span><i class="fas fa-check"></i> OCR Processing</span>
+                        <span><i class="fas fa-check"></i> Data Validation</span>
+                        <span><i class="fas fa-check"></i> ERP Integration</span>
+                    </div>
+                    <div class="card-action disabled">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+
+                <!-- Contract Reviewer - Coming Soon -->
+                <div class="solution-card coming-soon">
+                    <div class="card-status">
+                        <span class="status-badge soon">Coming Soon</span>
+                    </div>
+                    <div class="card-icon contract">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="card-title">Contract Reviewer</h3>
+                    <p class="card-description">
+                        AI-powered contract analysis to identify risks, obligations, and key clauses instantly.
+                    </p>
+                    <div class="card-features">
+                        <span><i class="fas fa-check"></i> Risk Detection</span>
+                        <span><i class="fas fa-check"></i> Clause Analysis</span>
+                        <span><i class="fas fa-check"></i> Compliance Check</span>
+                    </div>
+                    <div class="card-action disabled">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+
+                <!-- Email Assistant - Coming Soon -->
+                <div class="solution-card coming-soon">
+                    <div class="card-status">
+                        <span class="status-badge soon">Coming Soon</span>
+                    </div>
+                    <div class="card-icon email">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="card-title">Email Assistant</h3>
+                    <p class="card-description">
+                        Generate professional emails, responses, and summaries with context-aware AI.
+                    </p>
+                    <div class="card-features">
+                        <span><i class="fas fa-check"></i> Smart Compose</span>
+                        <span><i class="fas fa-check"></i> Tone Adjustment</span>
+                        <span><i class="fas fa-check"></i> Auto-Reply</span>
+                    </div>
+                    <div class="card-action disabled">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+
+                <!-- Report Builder - Coming Soon -->
+                <div class="solution-card coming-soon">
+                    <div class="card-status">
+                        <span class="status-badge soon">Coming Soon</span>
+                    </div>
+                    <div class="card-icon report">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="card-title">Report Builder</h3>
+                    <p class="card-description">
+                        Create comprehensive reports from data with AI-generated insights and visualizations.
+                    </p>
+                    <div class="card-features">
+                        <span><i class="fas fa-check"></i> Auto Charts</span>
+                        <span><i class="fas fa-check"></i> Data Insights</span>
+                        <span><i class="fas fa-check"></i> Export Options</span>
+                    </div>
+                    <div class="card-action disabled">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2 class="section-title">Enterprise-Grade AI Platform</h2>
+                <p class="section-subtitle">
+                    Built for security, scalability, and seamless integration
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-grade encryption and compliance with SOC 2, GDPR, and HIPAA standards.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Powered by Azure cloud infrastructure for sub-second response times.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Easy Integration</h3>
+                    <p>RESTful APIs and webhooks for seamless integration with your existing tools.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Infinitely Scalable</h3>
+                    <p>Auto-scaling infrastructure that grows with your business needs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated support team available round the clock for enterprise customers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored AI models trained on your specific industry and use cases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-badge">About Quantril</span>
+                    <h2 class="section-title">Empowering Digital Transformation</h2>
+                    <p>
+                        Quantril is a leading technology company specializing in AI-powered enterprise solutions. 
+                        We help businesses automate complex workflows, extract insights from unstructured data, 
+                        and make data-driven decisions faster.
+                    </p>
+                    <p>
+                        Our suite of AI tools is designed with enterprise needs in mind - secure, scalable, 
+                        and easy to integrate with your existing systems.
+                    </p>
+                    <a href="https://www.quantril.com/" target="_blank" class="btn-primary">
+                        <i class="fas fa-globe"></i>
+                        Visit Our Website
+                    </a>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="about-card-content">
+                            <h4>Innovation First</h4>
+                            <p>Cutting-edge AI research applied to real business problems</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="about-card-content">
+                            <h4>Customer Focused</h4>
+                            <p>Solutions designed around your unique business needs</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="about-card-content">
+                            <h4>Proven Results</h4>
+                            <p>Trusted by 500+ enterprises worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2>Ready to Transform Your Workflow?</h2>
+            <p>Start using our AI-powered tools today and experience the future of work.</p>
+            <a href="#solutions" class="btn-cta">
+                <i class="fas fa-rocket"></i>
+                Get Started Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-cube"></i>
+                    <span>Quantril<span class="highlight">AI</span></span>
+                </div>
+                <p>Empowering businesses with intelligent automation solutions.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Solutions</h4>
+                    <a href="#solutions">MoM Generator</a>
+                    <a href="#solutions">Document Analyzer</a>
+                    <a href="#solutions">Invoice Processor</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="https://www.quantril.com/" target="_blank">About Us</a>
+                    <a href="https://www.quantril.com/" target="_blank">Contact</a>
+                    <a href="https://www.quantril.com/" target="_blank">Careers</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Quantril Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
