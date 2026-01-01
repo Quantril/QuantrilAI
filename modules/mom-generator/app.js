@@ -245,16 +245,21 @@ function getFileType(filename) {
     const ext = filename.split('.').pop().toLowerCase();
     const typeMap = {
         'pdf': 'pdf',
-        'doc': 'word',
-        'docx': 'word',
+        'doc': 'docx',
+        'docx': 'docx',
         'png': 'image',
         'jpg': 'image',
         'jpeg': 'image',
         'gif': 'image',
         'bmp': 'image',
-        'webp': 'image'
+        'webp': 'image',
+        'mp3': 'audio',
+        'wav': 'audio',
+        'm4a': 'audio',
+        'mp4': 'video',
+        'txt': 'text'
     };
-    return typeMap[ext] || 'unknown';
+    return typeMap[ext] || ext;
 }
 
 // Update UI State
