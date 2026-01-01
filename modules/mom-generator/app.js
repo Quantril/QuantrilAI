@@ -1,11 +1,11 @@
 // API Configuration
-// NOTE: Set your API key before deployment or use environment configuration
+// API key is loaded from config.local.js (gitignored) or set empty for production deployment
 const API_CONFIG = {
     url: 'https://generate-mom-func.azurewebsites.net/api/generate-mom',
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'x-functions-key': '' // Add your API key here or configure via deployment
+        'x-functions-key': (typeof LOCAL_CONFIG !== 'undefined' && LOCAL_CONFIG.apiKey) ? LOCAL_CONFIG.apiKey : ''
     }
 };
 

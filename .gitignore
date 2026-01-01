@@ -1,0 +1,19 @@
+# Config files with secrets
+config.local.js
+modules/mom-generator/config.local.js
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
