@@ -13,6 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Create config file with API key
+        run: |
+          echo "const LOCAL_CONFIG = { apiKey: '${{ secrets.MOM_API_KEY }}' };" > modules/mom-generator/config.local.js
+
       - name: Deploy to Azure Static Web App
         uses: Azure/static-web-apps-deploy@v1
         with:
