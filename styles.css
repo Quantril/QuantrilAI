@@ -1,26 +1,26 @@
 /* ============================================
    Quantril AI Suite - Landing Page Styles
-   Light Theme - White & Grey
+   Brand Colors: #00CEFF (Cyan) & #00DB70 (Green)
    ============================================ */
 
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --primary-light: #818cf8;
-    --secondary: #0ea5e9;
-    --accent: #8b5cf6;
+    --primary: #00CEFF;
+    --primary-dark: #00b8e6;
+    --primary-light: #33d4ff;
+    --secondary: #00DB70;
+    --accent: #00DB70;
     --bg-dark: #f8fafc;
     --bg-card: #ffffff;
     --bg-card-hover: #f1f5f9;
     --border: #e2e8f0;
-    --text: #1e293b;
-    --text-muted: #64748b;
-    --text-dim: #94a3b8;
-    --success: #10b981;
+    --text: #1a202c;
+    --text-muted: #4a5568;
+    --text-dim: #718096;
+    --success: #00DB70;
     --warning: #f59e0b;
     --error: #ef4444;
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #0ea5e9 100%);
-    --gradient-glow: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, #00CEFF 0%, #00DB70 100%);
+    --gradient-glow: radial-gradient(ellipse at center, rgba(0, 206, 255, 0.1) 0%, transparent 70%);
     --container-width: 1200px;
     --section-padding: 100px;
     --transition-fast: 0.2s ease;
@@ -79,7 +79,21 @@ a {
     gap: 0.75rem;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #1e293b;
+    color: #1a202c;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.footer-logo-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: contain;
 }
 
 .logo-icon {
@@ -443,14 +457,15 @@ a {
     margin-bottom: 1.5rem;
     position: relative;
     z-index: 1;
+    color: #ffffff;
 }
 
-.card-icon.mom { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); }
-.card-icon.analyzer { background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%); }
-.card-icon.invoice { background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); }
-.card-icon.contract { background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%); }
-.card-icon.email { background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); }
-.card-icon.report { background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%); }
+.card-icon.mom { background: linear-gradient(135deg, #00CEFF 0%, #00DB70 100%); }
+.card-icon.analyzer { background: linear-gradient(135deg, #00CEFF 0%, #00b8e6 100%); }
+.card-icon.invoice { background: linear-gradient(135deg, #00DB70 0%, #00c464 100%); }
+.card-icon.contract { background: linear-gradient(135deg, #00CEFF 0%, #00DB70 100%); }
+.card-icon.email { background: linear-gradient(135deg, #00DB70 0%, #00CEFF 100%); }
+.card-icon.report { background: linear-gradient(135deg, #00CEFF 0%, #00DB70 100%); }
 
 .card-title {
     font-size: 1.5rem;

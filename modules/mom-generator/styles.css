@@ -1,24 +1,25 @@
 /* ============================================
    MoM Generator Module Styles
-   Quantril AI Suite - Light Theme
+   Quantril AI Suite - Brand Colors
+   #00CEFF (Cyan) & #00DB70 (Green)
    ============================================ */
 
 :root {
-    --primary-color: #6366f1;
-    --primary-hover: #4f46e5;
-    --primary-light: #e0e7ff;
-    --secondary-color: #8b5cf6;
-    --success-color: #10b981;
+    --primary-color: #00CEFF;
+    --primary-hover: #00b8e6;
+    --primary-light: #e0f7ff;
+    --secondary-color: #00DB70;
+    --success-color: #00DB70;
     --error-color: #ef4444;
     --warning-color: #f59e0b;
     --background: #f8fafc;
     --surface: #ffffff;
     --surface-light: #f1f5f9;
-    --text-primary: #1e293b;
-    --text-secondary: #64748b;
-    --text-muted: #94a3b8;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --text-muted: #718096;
     --border-color: #e2e8f0;
-    --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient-1: linear-gradient(135deg, #00CEFF 0%, #00DB70 100%);
     --gradient-2: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
